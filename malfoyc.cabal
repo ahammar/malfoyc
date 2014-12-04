@@ -1,0 +1,17 @@
+Name:           malfoyc
+Version:        0.1
+Cabal-Version:  >= 1.2
+Build-Type:     Simple
+
+Executable malfoyc
+    Main-Is:        Main.hs
+    Hs-Source-Dirs: src
+    Other-Modules:  Language.Malfoy.Parser, Language.Malfoy.Lexer
+    Build-Depends:  array, base >= 4, containers, mtl
+
+Executable runmalfoy
+    Main-Is:        MalfoyCompiler/Simulator.hs
+    Hs-Source-Dirs: src
+    Other-Modules:  Language.Malfoy.Parser, Language.Malfoy.Lexer
+    Build-Depends:  array, base >= 4, containers, mtl
+

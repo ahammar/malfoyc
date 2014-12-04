@@ -1,0 +1,2 @@
+
+main = lambda x y -> x == y;

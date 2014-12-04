@@ -1,0 +1,2 @@
+
+main = lambda z -> let x = 5, y = 4 in x*x + y*y

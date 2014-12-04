@@ -1,0 +1,5 @@
+
+go = lambda a b c -> if a == 0 then c else go (a-1) b (c+b);
+
+main = lambda x y -> go x y 0;
+

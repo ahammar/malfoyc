@@ -1,0 +1,46 @@
+_a0 arg --- ---
+_a1 arg _a0:l ---
+_a2 exit --- ---
+_a3 call _a2:l _a1:l
+_a4 seq _a3:l _a0:r
+_a5 seq _a4:l _a1:r &_a46
+_a8 ret --- ---
+_a9 arg --- ---
+_a10 call _a8:r _a9:l
+_a11 seq _a10:l _a9:r
+_a12 arg --- ---
+_a13 call _a11:r _a12:l
+_a14 seq _a13:l _a12:r
+_a15 arg --- ---
+_a16 call _a14:r _a15:l
+_a17 seq _a16:l _a15:r
+_a18 add _a17:r ---
+_a19 dup _a17:l _a18:r
+_a20 sub _a14:l --- $1
+_a21 branch --- _a20:l
+_a22 branch --- _a19:l
+_a23 branch _a8:r _a18:l
+_a24 branch --- _a11:l &_a33
+_a25 dup _a23:l _a24:l
+_a26 dup _a22:l _a25:l
+_a27 dup _a21:l _a26:l
+_a28 equals _a27:l --- $0
+_a29 dup _a28:l _a21:r
+_a30 param _a23:r ---
+_a31 param _a22:r _a30:l
+_a32 param _a29:l _a31:l
+_a33 context _a8:l _a32:l
+_a34 ret --- ---
+_a35 arg --- ---
+_a36 call _a34:r _a35:l
+_a37 seq _a36:l _a35:r &_a33
+_a38 arg --- ---
+_a39 call _a37:r _a38:l
+_a40 seq _a39:l _a38:r
+_a41 arg --- ---
+_a42 call _a40:r _a41:l
+_a43 seq _a42:l _a41:r $0
+_a44 param _a43:l ---
+_a45 param _a40:l _a44:l
+_a46 context _a34:l _a45:l
+

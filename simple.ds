@@ -1,0 +1,16 @@
+_a0 arg --- ---
+_a1 exit --- ---
+_a2 call _a1:l _a0:l
+_a3 seq _a2:l _a0:r &_a11
+_a6 ret --- ---
+_a7 arg --- ---
+_a8 call _a6:r _a7:l
+_a9 seq _a8:l _a7:r &_a16
+_a10 param _a9:r ---
+_a11 context _a6:l _a10:l
+_a12 ret --- ---
+_a13 add _a12:r ---
+_a14 dup _a13:l _a13:r
+_a15 param _a14:l ---
+_a16 context _a12:l _a15:l
+

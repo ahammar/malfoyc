@@ -1,0 +1,4 @@
+
+go = lambda n curr next -> if n == 0 then curr else go (n-1) next (curr + next);
+
+main = lambda n -> go n (n-n) 1;

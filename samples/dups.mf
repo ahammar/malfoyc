@@ -1,0 +1,2 @@
+
+main = lambda x -> ((x + x) + (x + x)) + 2;

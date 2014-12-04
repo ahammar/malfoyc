@@ -1,0 +1,3 @@
+
+double = lambda x -> x + x;
+main = lambda y -> double (double y);

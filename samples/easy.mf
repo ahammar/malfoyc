@@ -1,0 +1,4 @@
+
+-- A really easy program
+main = lambda x -> x;
+

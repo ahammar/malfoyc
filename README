@@ -1,0 +1,33 @@
+This is the compiler for the Malfoy language into aMac assembly.
+
+To build, it requires some packages (exact names depend on your OS):
+    ghc6
+    cabal-install
+    happy
+    alex
+    libghc6-mtl
+
+Alternatively you may install the Haskell Platform, which should
+include all of these. It is available from this url:
+    http://haskell.org/platform
+
+To compile a program, simply run malfoyc with the file name of the
+source code as the first argument. There is a pre-compiled version
+of malfoyc in ./dist/build/malfoyc
+    ./dist/build/malfoyc/malfoyc samples/easy.mf
+
+Pipe the output of this program to a file with the .ds extension to
+use it with the assembler.
+
+There is also a switch for producing graphs of your programs instead
+of assembly code.
+
+All of the samples can be compiled using the provided Makefile by
+typing
+    make samples
+
+Also, you may make the graphs for the samples by typing
+    make graphs
+This requires the graphviz package.
+
+The build products of malfoyc are placed in ./build/

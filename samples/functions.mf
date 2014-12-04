@@ -1,0 +1,3 @@
+
+-- A very simple program that squares its input twice.
+main = lambda y -> let square = lambda x -> x*x in square (square y);

@@ -1,0 +1,3 @@
+
+-- A very simple program that calculates factorials.
+main = lambda x -> if x == 1 then x else x * main (x - 1)
